@@ -73,7 +73,7 @@ Dataset folder structure:
 *Note: to run and save separate results for each pair [person, garment], set `batch_size=1`*.
 
 ### Training
-For each dataset, you need to train a Teacher network first to guide the Student network. DM-VTON uses [FS-VTON](https://arxiv.org/abs/2204.01046) as the Teacher. Each model is trained through 2 stages: first stage only trains warping module and stage 2 trains the entire model (warping module + generator). Check the sample scripts for training both Teacher network (`scripts/train_pb_warp` + `scripts/train_pb_e2e`) and Student network (`scripts/train_pf_warp` + `scripts/train_pf_e2e`). We also provide a Colab notebook [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1oLg0qe0nqLuIeaklzwbkk3IOKmMb0clk) as a quick tutorial.
+For each dataset, you need to train a Teacher network first to guide the Student network. DM-VTON uses [FS-VTON](https://arxiv.org/abs/2204.01046) as the Teacher. Each model is trained through 2 stages: first stage only trains warping module and stage 2 trains the entire model (warping module + generator). Check the sample scripts for training both Teacher network (`scripts/train_pb_warp` + `scripts/train_pb_e2e`) and Student network (`scripts/train_pf_warp` + `scripts/train_pf_e2e`). We also provide a Colab notebook [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_WJnPxZDXMY6mFZLdYKesymaGYkBUpBJ?usp=sharing) as a quick tutorial.
 
 #### **Training Settings**
 A full list of trainning settings can be found in [`opt/train_opt.py`](./opt/train_opt.py). Below are some important settings.
