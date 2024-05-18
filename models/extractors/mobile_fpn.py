@@ -70,7 +70,7 @@ class MobileNetV2_dynamicFPN(nn.Module):
             nn.BatchNorm2d(self.input_channel),
             nn.ReLU6(inplace=True),
         )
-
+        
         # Inverted residual blocks (each n layers)
         self.inverted_residual_setting = [
             {'expansion_factor': 1, 'width_factor': 16, 'n': 1, 'stride': 1},

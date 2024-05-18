@@ -1,3 +1,7 @@
+# Partly re-revised by: 
+# Muhammet Serdar NAZLI, 150210723 
+# Muhammed Rüşen BİRBEN, 1502107..
+
 import numpy as np
 import torch
 import torch.nn as nn
